@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBg"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/loginani"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+
+        android:id="@+id/tvHeader"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:text="@string/login"
+        android:padding="5dp"
+        android:shadowColor="#fff"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+
+    <EditText
+
+        android:id="@+id/etEmail"
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.50"
+
+        android:background="@color/BgSecondary"
+        android:hint="Email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="55dp"
+
+        android:textAlignment="center"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.497"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+
+        app:layout_constraintVertical_bias="0.111"
+
+        tools:ignore="HardcodedText,LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+
+    <EditText
+
+        android:id="@+id/etPassword"
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.50"
+        android:background="@color/BgSecondary"
+
+        android:hint="Password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="55dp"
+        android:textAlignment="center"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.497"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+
+        app:layout_constraintVertical_bias="0.101"
+
+        tools:ignore="HardcodedText,LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+
+
+    <Button
+
+        android:id="@+id/btnLogin"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="64dp"
+
+        android:onClick="loginUser"
+
+        android:text="@string/login"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+
+        app:layout_constraintVertical_bias="0.222"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+
+        android:id="@+id/btnCancel"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:onClick="cancelFields"
+
+        android:text="@string/cancel"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.653"
+
+        app:layout_constraintStart_toEndOf="@+id/btnLogin"
+
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+
+        app:layout_constraintVertical_bias="0.222" />
+
+    <Button
+
+        android:id="@+id/btnReg"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:onClick="regScreen"
+
+        android:text="@string/register"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.498"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+
+        app:layout_constraintVertical_bias="0.109" />
+</androidx.constraintlayout.widget.ConstraintLayout>

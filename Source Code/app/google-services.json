@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "702610933273",
+    "firebase_url": "https://skilltrack-java-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "skilltrack-java",
+    "storage_bucket": "skilltrack-java.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702610933273:android:834f7bb7106df8fcba4c88",
+        "android_client_info": {
+          "package_name": "com.example.skilltrack_java"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702610933273-9k71jgtbu5vr9glt9prtharfcmmg2o7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMo0V1Iwc-BcF03lHFbrydSTn-wj4z2b8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702610933273-9k71jgtbu5vr9glt9prtharfcmmg2o7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702610933273:android:64b73b9d0e1b459fba4c88",
+        "android_client_info": {
+          "package_name": "com.example.skilltrackv20_kotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702610933273-9k71jgtbu5vr9glt9prtharfcmmg2o7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMo0V1Iwc-BcF03lHFbrydSTn-wj4z2b8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702610933273-9k71jgtbu5vr9glt9prtharfcmmg2o7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
